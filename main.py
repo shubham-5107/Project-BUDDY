@@ -157,15 +157,6 @@ def processor(query):
                     answer= int(query.split()[2]) / int(query.split()[-1])
                 
                 return str(answer)
-                
-        case s if query.split()[0]=='add':
-            return query.split()[1] + query.split()[-1]
-        case s if query.split()[0]=='subtract':
-            return query.split()[1] - query.split()[-1]
-        case s if query.split()[0]=='multiply':
-            return query.split()[1] * query.split()[-1]
-        case s if query.split()[0]=='divide':
-            return query.split()[-1] / query.split()[1]
 
     return 'Sorry sir I can\'t do it, I can assist you with something else, please let me know'
 
@@ -174,4 +165,5 @@ if __name__=='__main__':
         answer= processor(take_command())
         print(answer)
         speak(answer)
+
     
