@@ -18,8 +18,8 @@ class gods:
     def shiva(self):
         os.remove(f'{self.cache_file}.py')
 
+engine= pyttsx3.init()
 def speak(audio):
-    engine= pyttsx3.init()
     engine.setProperty('rate', 170)
     engine.say(audio)
     engine.runAndWait()
@@ -167,3 +167,4 @@ if __name__=='__main__':
         speak(answer)
 
     
+
