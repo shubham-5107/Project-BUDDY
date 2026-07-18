@@ -1,11 +1,5 @@
-import pyttsx3
 import requests
 import datetime
-def speak(audio):
-    engine= pyttsx3.init()
-    engine.setProperty('rate', 170)
-    engine.say(audio)
-    engine.runAndWait()
     
 class start_my_day:
     def __init__(self):
@@ -48,5 +42,3 @@ class start_my_day:
 
 if __name__=='__main__':
     obj= start_my_day()
-    print(obj.report)
-    speak(obj.report)
